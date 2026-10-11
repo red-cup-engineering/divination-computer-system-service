@@ -1,0 +1,40 @@
+{
+  "name": "@lenticule-science/divining",
+  "version": "0.4.2",
+  "type": "module",
+  "description": "Sign-reading practice producers -- astrology, tarot, numerology, the computus, the lectionary, geomancy, the I Ching, Ifa, runes, the Numogram, and Lakota star knowledge -- with a clean shared FOUR Reading settlement, live and source-available at Divination. It intentionally does not reproduce the legacy panelConsensus, sigma-dual prediction, or D4 gauge-orbit APIs; see content/text/documents/sign-reading-as-settling.md.",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "files": [
+    "src",
+    "package.json"
+  ],
+  "exports": {
+    "./astrology": {
+      "import": "./src/astrology/index.mjs"
+    },
+    "./reading": {
+      "import": "./src/reading.mjs"
+    },
+    "./divination": {
+      "import": "./src/divination/index.mjs"
+    },
+    "./liturgy": {
+      "import": "./src/liturgy/index.mjs"
+    },
+    "./package.json": "./package.json",
+    "./divination/codecs/indicators": "./src/divination/codecs/indicators.mjs",
+    "./divination/codecs/spread": "./src/divination/codecs/spread.mjs",
+    "./divination/codecs/glyph": "./src/divination/codecs/glyph.mjs"
+  },
+  "dependencies": {
+    "@lenticule-science/astronomy-position-computation-service": "workspace:*",
+    "@red-cup-engineering/metrologic": "workspace:*",
+    "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/signchain": "workspace:*",
+    "@red-cup-engineering/signcell": "workspace:*"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,41 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+
+import { WEEKDAYS, civilDate, parseIsoDate, formatIsoDate, dayNumberFromCivil, civilFromDayNumber, dayNumber, isoFromDayNumber, addDays, daysBetween, dayOfWeek, weekdayOnOrAfter, weekdayOnOrBefore, weekdayAfter, weekdayBefore, nthWeekdayOnOrAfter, nthWeekdayOnOrBefore } from "../src/calendar/iso-date.mjs";
+import { easterCivil, easterDate } from "../src/calendar/computus.mjs";
+import { goldenNumber, dayOfYear, isoWeek } from "../src/calendar/cycles.mjs";
+import { movableFeast, fixedFeast, feastDate } from "../src/calendar/feast.mjs";
+import { buildDatePanel, readDate } from "../src/calendar/reading.mjs";
+const calendar = Object.freeze({ WEEKDAYS, civilDate, parseIsoDate, formatIsoDate, dayNumberFromCivil, civilFromDayNumber, dayNumber, isoFromDayNumber, addDays, daysBetween, dayOfWeek, weekdayOnOrAfter, weekdayOnOrBefore, weekdayAfter, weekdayBefore, nthWeekdayOnOrAfter, nthWeekdayOnOrBefore, easterCivil, easterDate, goldenNumber, dayOfYear, isoWeek, movableFeast, fixedFeast, feastDate, buildDatePanel, readDate });
+import * as divination from "../src/divination/index.mjs";
+import { buildShieldPanel, buildPanel, readShield } from "../src/geomancy/reading.mjs";
+import { FIGURES, SEEDED_CAST_METHOD, figureKey, nameFigure, castMothers, castShield } from "../src/geomancy/geomancy.mjs";
+const geomancy = Object.freeze({ buildShieldPanel, buildPanel, readShield, FIGURES, SEEDED_CAST_METHOD, figureKey, nameFigure, castMothers, castShield });
+import { buildCastPanel, buildPanel as buildPanel_2, read } from "../src/iching/reading.mjs";
+import { castIChing, THREE_COINS_METHOD } from "../src/iching/iching.mjs";
+const iching = Object.freeze({ buildCastPanel, buildPanel: buildPanel_2, read, castIChing, THREE_COINS_METHOD });
+import { buildPanelFromCast, buildPanel as buildPanel_3, readCast } from "../src/ifa/reading.mjs";
+import { PRINCIPAL_ODU, CHAIN_POSITIONS, COLUMN_MARKS, SEEDED_CAST_METHOD as SEEDED_CAST_METHOD_2, castOpele } from "../src/ifa/ifa.mjs";
+const ifa = Object.freeze({ buildPanelFromCast, buildPanel: buildPanel_3, readCast, PRINCIPAL_ODU, CHAIN_POSITIONS, COLUMN_MARKS, SEEDED_CAST_METHOD: SEEDED_CAST_METHOD_2, castOpele });
+import * as liturgy from "../src/liturgy/index.mjs";
+import { queryDigits, reduceToDigit, gateOf, castNumogram, ZONES, twinOf } from "../src/numogram/numogram.mjs";
+import { buildPanelFromCast as buildPanelFromCast_2, castLabel, read as read_2 } from "../src/numogram/reading.mjs";
+const numogram = Object.freeze({ queryDigits, reduceToDigit, gateOf, castNumogram, ZONES, twinOf, buildPanelFromCast: buildPanelFromCast_2, castLabel, read: read_2 });
+import { buildCastPanel as buildCastPanel_2, buildPanel as buildPanel_4, readCast as readCast_2 } from "../src/runes/reading.mjs";
+import { FUTHARK, NON_INVERTIBLE, SEEDED_CAST_METHOD as SEEDED_CAST_METHOD_3, DEFAULT_RUNE_COUNT, isInvertible, drawRunes, castRunes } from "../src/runes/runes.mjs";
+const runes = Object.freeze({ buildCastPanel: buildCastPanel_2, buildPanel: buildPanel_4, readCast: readCast_2, FUTHARK, NON_INVERTIBLE, SEEDED_CAST_METHOD: SEEDED_CAST_METHOD_3, DEFAULT_RUNE_COUNT, isInvertible, drawRunes, castRunes });
+import { sunLongitude, seasonalPosition, SEASONS, THRESHOLDS, SPRING_JOURNEY } from "../src/starknowledge/starknowledge.mjs";
+import { buildSkyPanel, readSky } from "../src/starknowledge/reading.mjs";
+const starknowledge = Object.freeze({ sunLongitude, seasonalPosition, SEASONS, THRESHOLDS, SPRING_JOURNEY, buildSkyPanel, readSky });
+
+test("each non-astrology family exports and performs its deterministic domain operation", () => {
+  assert.equal(calendar.easterDate(2026), "2026-04-05");
+  assert.equal(divination.dailySpread("2026-09-08").positions.length, 1);
+  assert.equal(liturgy.romanDay("2026-09-08").cycles.sunday, "A");
+  assert.equal(geomancy.castShield("tunesday").mothers.length, 4);
+  assert.equal(iching.castIChing("tunesday").lines.length, 6);
+  assert.equal(ifa.castOpele("tunesday").marks.length, 8);
+  assert.equal(runes.castRunes("tunesday").drawn.length, 3);
+  assert.equal(numogram.castNumogram("tunesday").kind, "numogram.cast");
+  assert.equal(starknowledge.seasonalPosition("2026-09-08").season, "blokétu (summer)");
+});

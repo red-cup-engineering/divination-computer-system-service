@@ -1,0 +1,36 @@
+{
+  "id": "sign-reader",
+  "name": "sign reader",
+  "kind": "office",
+  "normative-structure": "What a sign-panel settles to -- the reading a practice's producer emits, and whether it is fit to serve as another micro-enterprise's own indicator input -- is this office's own record, never a persona's private hand-cast draft asserted without a producer behind it.",
+  "deontic-profile": {
+    "practice-production": "duty",
+    "service-disclosure": "duty",
+    "settling-core-design": "liberty",
+    "authorize-a-practice-release": "deontic-power",
+    "resist-a-consuming-enterprise-writing-this-offices-own-practice-pool": "deontic-immunity"
+  },
+  "provides-skill": [
+    "making-a-task"
+  ],
+  "authority-scope": [
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/"
+  ],
+  "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/",
+  "part-of": "emsenn",
+  "reports-to": [],
+  "theory-basis": [
+    "the @lenticule-science/divining package's own design: 'sign-reading as settling' -- a divination is the settlement of a panel of sign-witnesses into a charge over the bilattice FOUR, read as the sigma-dual pair diagnosis/prediction",
+    "the practicing/registry.mts Practice template: every divinatory method is one functor from a Query to a panel of SignWitnesses, read through one shared core, so growing the chain never changes the core",
+    "lenticule-science's own Obsmetrological Services Section precedent: a sovereign settlement carrying the firm's formal theory of a domain, served to other micro-enterprises through the Internal Market rather than run as a product itself"
+  ],
+  "unrealized": [
+    "the legacy extended FOUR-bilattice surface (panelConsensus, the sigma-dual diagnosis/prediction, and the D4 gauge orbit) remains unported. Live practice readers settle their SignWitness panels through the clean common Reading operation and Articulating's FOUR provider. Any extension must be rewritten cleanly off the dead agential-relationality archive, not rewired into it"
+  ],
+  "founded": "2026-07-17",
+  "x-provenance": {
+    "recorded-by": "claude",
+    "recorded-on": "2026-07-18",
+    "derived-from": "user directive of 2026-07-17: stand up Divination as a sovereign state enterprise owned by lenticule-science, to revive Cassia Lorne's Hive routine reads with NIM-generated imagery. Amended 2026-07-18: turntide-islands' sky-desk office became this office's first live consumer, via content/contracts/divination-daily-reading-service.json and run-one-exchange.mjs, realizing the practice-production and service-disclosure duties this record previously listed as unrealized."
+  }
+}

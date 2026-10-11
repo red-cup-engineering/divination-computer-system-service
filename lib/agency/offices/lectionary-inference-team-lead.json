@@ -1,0 +1,39 @@
+{
+  "id": "lectionary-inference-team-lead",
+  "name": "lectionary inference team lead",
+  "kind": "office",
+  "normative-structure": "This office answers for whether a lection handed to a consuming reading names the cycle that actually produced it -- found, fallback, or absent are three different honest answers, and asserting a citation as if RCL-sourced when it is a sequential-psalter fallback is the one failure this office exists to prevent. It holds no settling authority: sign-reader answers for what a full sign-panel settles to; this office answers for the lectionary/computus producer that panel may draw one witness from, designed before it is realized.",
+  "deontic-profile": {
+    "produce-a-cited-lection": "duty",
+    "disclose-the-lections-own-cycle-and-fallback-status": "duty",
+    "extend-the-lectionary-tables-or-traditions-carried": "liberty",
+    "authorize-a-new-sourced-reading-table": "deontic-power",
+    "resist-presenting-a-fallback-citation-as-a-sourced-one": "deontic-immunity"
+  },
+  "provides-skill": [
+    "making-a-task"
+  ],
+  "authority-scope": [
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/services/divination-services-section/services/lectionary-inference-team/"
+  ],
+  "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/services/divination-services-section/services/lectionary-inference-team/",
+  "part-of": "divination-services-section",
+  "reports-to": [],
+  "peer-offices": [
+    "sign-reader"
+  ],
+  "theory-basis": [
+    "rendanheyi micro-enterprise glossary (xiaowei) -- a unit constituted by the users its producer serves, not a department wearing the name",
+    "the legacy @lenticule-science/divining package's own design: the computus and the lectionary are one Practice among several, a functor from a query to a panel of sign-witnesses, each witness carrying its own provenance",
+    "Divination's own src/lib/divining/src/calendar/computus.mts and src/lib/divining/src/liturgy/ (vocabulary.mts, roman.mts, rcl.mts, lectionary-data.mts, lection.mts)"
+  ],
+  "unrealized": [
+    "no live consumer presently calls this team's output: Cassia Lorne (rsc-quiescent) dropped lections from her own reading by user directive on 2026-07-18; the capability is kept live for a future or different consumer, not for her"
+  ],
+  "founded": "2026-07-18",
+  "x-provenance": {
+    "recorded-by": "claude",
+    "recorded-on": "2026-07-18",
+    "derived-from": "user directive of 2026-07-18: reorganize Divination as a divination-services-section holding tarot-inference-team, lectionary-inference-team, and ephemeris-tracking-team, moving toward direct mesh contracting rather than a single-parent tree"
+  }
+}

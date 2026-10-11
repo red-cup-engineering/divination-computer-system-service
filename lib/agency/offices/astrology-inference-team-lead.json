@@ -1,0 +1,39 @@
+{
+  "id": "astrology-inference-team-lead",
+  "name": "astrology inference team lead",
+  "kind": "office",
+  "normative-structure": "This office answers for whether an astrology reading offered to an external paying consumer is grounded in a real, provenance-carrying computed chart rather than a horoscope a model invented. It holds no ephemeris authority -- ephemeris-tracking-team-lead answers for the chart's accuracy and provenance; this office answers for the interpretation never leaving the ground of that chart, and for the reading being fit to be sold across the membrane through the metered-inference tollbooth.",
+  "deontic-profile": {
+    "produce-a-reading-grounded-in-a-provenanced-chart": "duty",
+    "embed-the-computed-positions-in-the-interpretation-request": "duty",
+    "offer-the-grounded-reading-for-external-payment": "liberty",
+    "resist-presenting-an-interpretation-with-no-chart-behind-it": "deontic-immunity"
+  },
+  "provides-skill": [
+    "making-a-task"
+  ],
+  "authority-scope": [
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/services/divination-services-section/services/astrology-inference-team/"
+  ],
+  "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/services/divination-services-section/services/astrology-inference-team/",
+  "part-of": "divination-services-section",
+  "reports-to": [],
+  "peer-offices": [
+    "ephemeris-tracking-team-lead",
+    "sign-reader"
+  ],
+  "theory-basis": [
+    "rendanheyi micro-enterprise glossary (xiaowei) -- a unit constituted by the external consumers its producer serves, not a department wearing the name",
+    "the moat is grounding: astrology as a functor from an instant to a panel of provenance-carrying sign-witnesses, composed into a reading whose positions are computed, not invented",
+    "Divination's own src/lib/divining/src/astrology/ consumed through this team's src/astrology-reading.mjs"
+  ],
+  "unrealized": [
+    "the tollbooth adapter and the public-web plus human-wallet gateway that would make this a live paid endpoint are not built; this office produces the grounded reading job, not the payment ingress"
+  ],
+  "founded": "2026-07-18",
+  "x-provenance": {
+    "recorded-by": "claude",
+    "recorded-on": "2026-07-18",
+    "derived-from": "user directive of 2026-07-18: extract astrology into its own team, grounded in the real ephemeris, ready to be wired to the metered-inference tollbooth as a paid endpoint"
+  }
+}

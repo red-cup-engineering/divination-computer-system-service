@@ -1,0 +1,60 @@
+{
+  "name": "@lenticule-science/divination-computer-system-service",
+  "version": "0.2.3",
+  "private": false,
+  "type": "module",
+  "bin": {
+    "invoke-service": "./src/contract-daily-reading.mjs",
+    "serve-service": "./src/server.mjs"
+  },
+  "scripts": {
+    "check": "node --check src/daily-reading.mjs && node --check src/daily-reading-witness.mjs && node --check src/contract-daily-reading.mjs && node --check src/server.mjs && node --check services/divination-services-section/services/ephemeris-tracking-team/src/ephemeris-product.mjs && node --check services/divination-services-section/services/ephemeris-tracking-team/src/precision-moment.mjs && node --check services/divination-services-section/services/astrology-inference-team/src/astrology-reading.mjs && node --check test/contract-daily-reading.test.mjs && node --check services/divination-services-section/services/ephemeris-tracking-team/test/ephemeris-product.test.mjs && node --check services/divination-services-section/services/ephemeris-tracking-team/test/precision-moment.test.mjs && node --check services/divination-services-section/services/astrology-inference-team/test/astrology-reading.test.mjs",
+    "test": "node --test test/contract-daily-reading.test.mjs services/divination-services-section/services/ephemeris-tracking-team/test/ephemeris-product.test.mjs services/divination-services-section/services/ephemeris-tracking-team/test/precision-moment.test.mjs services/divination-services-section/services/astrology-inference-team/test/astrology-reading.test.mjs"
+  },
+  "description": "Divination's sovereign deterministic RMN daily-reading settlement service.",
+  "files": [
+    "src/contract-daily-reading.mjs",
+    "src/daily-reading-witness.mjs",
+    "src/daily-reading.mjs",
+    "src/server.mjs",
+    "services/divination-services-section/services/ephemeris-tracking-team/src/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@lenticule-science/astronomy-position-computation-service": "workspace:*",
+    "@lenticule-science/divining": "workspace:*",
+    "@red-cup-engineering/a2a-services-section": "workspace:*",
+    "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/semiotic-eavt-services-section": "workspace:*",
+    "@red-cup-engineering/computer-web-server": "workspace:*",
+    "@red-cup-engineering/json-schema-services-section": "workspace:*",
+    "@red-cup-engineering/computer-inference-engine": "workspace:*",
+    "@red-cup-engineering/activitypub-services-section": "workspace:*",
+    "@red-cup-engineering/computer-content-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*"
+  },
+  "keywords": [
+    "divination",
+    "rmn",
+    "four",
+    "wit",
+    "sovereign-settlement"
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "exports": {
+    "./src/daily-reading.mjs": "./src/daily-reading.mjs",
+    "./src/contract-daily-reading.mjs": "./src/contract-daily-reading.mjs",
+    "./services/divination-services-section/services/ephemeris-tracking-team/src/ephemeris-product.mjs": "./services/divination-services-section/services/ephemeris-tracking-team/src/ephemeris-product.mjs",
+    "./services/divination-services-section/services/ephemeris-tracking-team/src/precision-moment.mjs": "./services/divination-services-section/services/ephemeris-tracking-team/src/precision-moment.mjs",
+    "./daily-reading": "./src/daily-reading.mjs",
+    "./contract-daily-reading": "./src/contract-daily-reading.mjs"
+  },
+  "devDependencies": {
+    "@red-cup-engineering/witness-journal-document-service": "workspace:*"
+  }
+}

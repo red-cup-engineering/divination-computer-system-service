@@ -1,0 +1,40 @@
+{
+  "id": "tarot-inference-team-lead",
+  "name": "tarot inference team lead",
+  "kind": "office",
+  "normative-structure": "This office answers for whether a tarot draw handed to a consuming reading is genuinely a draw -- seeded, reproducible from that seed, and honest about its own method -- rather than a card asserted with no witness behind it. It holds no settling authority: sign-reader, seated in Divination's own roster, answers for what a full sign-panel settles to; this office answers for the cartomancy producer that panel draws one witness from, designed before it is realized, exactly as module-developer's own duty requires.",
+  "deontic-profile": {
+    "produce-a-seeded-tarot-draw": "duty",
+    "disclose-the-draws-own-method-and-seed": "duty",
+    "extend-the-deck-or-spread-vocabulary": "liberty",
+    "authorize-a-new-spread-shape": "deontic-power",
+    "resist-a-consumer-overriding-the-draws-own-seed-provenance": "deontic-immunity"
+  },
+  "provides-skill": [
+    "making-a-task"
+  ],
+  "authority-scope": [
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/services/divination-services-section/services/tarot-inference-team/"
+  ],
+  "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/services/divination-services-section/services/tarot-inference-team/",
+  "part-of": "divination-services-section",
+  "reports-to": [],
+  "peer-offices": [
+    "sign-reader"
+  ],
+  "theory-basis": [
+    "rendanheyi micro-enterprise glossary (xiaowei) -- a unit constituted by the users its producer serves, not a department wearing the name",
+    "the legacy @lenticule-science/divining package's own design: cartomancy is one Practice among several, a functor from a query to a panel of sign-witnesses -- this team owns the cartomancy functor specifically",
+    "Divination's own src/lib/divining/src/divination/tarot.mts (TAROT_DECK, drawCards, dailySpread) and its wire codec at src/divination/codecs/spread.mts"
+  ],
+  "unrealized": [
+    "no micro-enterprise instance record (emsenn/schema/micro-enterprise) seats this team formally, matching the same gap AGRODAO's own hive-trading-team currently carries",
+    "no organizational contract record links this team to divination-services-section or to lenticule-science directly -- emsenn/schema/contract is a skill's own behavioral Hoare-triple, not a bilateral organizational agreement, and general-counsel's own record states that schema is not yet built; direct-contracting is presently carried as law (divination-services-section/lib/ownership.json's effective-law), not as a contract instance"
+  ],
+  "founded": "2026-07-18",
+  "x-provenance": {
+    "recorded-by": "claude",
+    "recorded-on": "2026-07-18",
+    "derived-from": "user directive of 2026-07-18: reorganize Divination as a divination-services-section holding tarot-inference-team, lectionary-inference-team, and ephemeris-tracking-team, moving toward direct mesh contracting rather than a single-parent tree"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ephemeris-tracking-team-lead",
+  "name": "ephemeris tracking team lead",
+  "kind": "office",
+  "normative-structure": "This office answers for whether a chart handed to a consuming reading carries its own provenance -- which algorithm computed it, at what accuracy -- rather than a body's position asserted with no ephemeris behind it. It holds no settling authority: sign-reader answers for what a full sign-panel settles to; this office answers for the ephemeris producer that panel draws its placements, aspects, and ingresses from, designed before it is realized.",
+  "deontic-profile": {
+    "produce-a-provenanced-chart": "duty",
+    "disclose-the-ephemeris-algorithm-and-accuracy": "duty",
+    "extend-the-ephemeris-to-higher-accuracy": "liberty",
+    "authorize-an-ephemeris-replacement": "deontic-power",
+    "resist-presenting-a-chart-with-no-stated-provenance": "deontic-immunity"
+  },
+  "provides-skill": [
+    "making-a-task"
+  ],
+  "authority-scope": [
+    "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/services/divination-services-section/services/ephemeris-tracking-team/"
+  ],
+  "jurisdiction": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/knowledge-services-section/services/divination-services-section/services/divination-services-section/services/ephemeris-tracking-team/",
+  "part-of": "divination-services-section",
+  "reports-to": [],
+  "peer-offices": [
+    "sign-reader"
+  ],
+  "theory-basis": [
+    "rendanheyi micro-enterprise glossary (xiaowei) -- a unit constituted by the users its producer serves, not a department wearing the name",
+    "the legacy @lenticule-science/divining package's own design: astrology is one Practice among several, a functor from a query (an instant) to a panel of sign-witnesses, each witness carrying its own provenance",
+    "Divination's own src/lib/divining/src/astrology/ (ephemeris.mts's EPHEMERIS_PROVENANCE, chart.mts, aspects.mts, lunation.mts, zodiac.mts, time.mts, events.mts)"
+  ],
+  "unrealized": [
+    "the current ephemeris is meeus-truncated-series + jpl-approximate-elements (zero-dependency); a full VSOP87 or JPL DE kernel would be a real accuracy improvement this office has not yet authorized"
+  ],
+  "founded": "2026-07-18",
+  "x-provenance": {
+    "recorded-by": "claude",
+    "recorded-on": "2026-07-18",
+    "derived-from": "user directive of 2026-07-18: reorganize Divination as a divination-services-section holding tarot-inference-team, lectionary-inference-team, and ephemeris-tracking-team, moving toward direct mesh contracting rather than a single-parent tree"
+  }
+}
