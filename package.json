@@ -32,8 +32,8 @@
     "@red-cup-engineering/json-schema-services-section": "workspace:*",
     "@red-cup-engineering/computer-inference-engine": "workspace:*",
     "@red-cup-engineering/activitypub-services-section": "workspace:*",
-    "@red-cup-engineering/computer-content-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*"
+    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/computer-content-address-engineering-services-section": "workspace:*"
   },
   "keywords": [
     "divination",
