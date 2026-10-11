@@ -55,6 +55,7 @@
     "./contract-daily-reading": "./src/contract-daily-reading.mjs"
   },
   "devDependencies": {
+    "@red-cup-engineering/eavt-services-section": "workspace:*",
     "@red-cup-engineering/witness-journal-document-service": "workspace:*"
   }
 }
