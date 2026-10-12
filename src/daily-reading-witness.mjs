@@ -1,9 +1,9 @@
 import { Buffer } from "node:buffer";
 
-import { seavt } from "@red-cup-engineering/semiotic-eavt-services-section/admit-seavt-row";
-import { jsonToTerm } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/json-codec";
-import { appendSeavtEntries } from "@red-cup-engineering/semiotic-eavt-services-section/append-seavt-entries";
-const directSeavt = (entity, attribute, value, time) => seavt(jsonToTerm(entity), jsonToTerm(attribute), jsonToTerm(value), time);
+import { append } from "@red-cup-engineering/semiotic-eavt-services-section/store";
+
+/** A daily-reading witness row is one line of the `daily-reading` log: `{at, e, a, v}`, each a plain string. */
+const directSeavt = (entity, attribute, value, time) => ({ at: time, e: entity, a: attribute, v: value });
 
 function niSurface(role, token) {
   const match = /^ni:\/\/\/sha-256;([A-Za-z0-9_-]{43})$/u.exec(token);
@@ -20,5 +20,6 @@ export function appendDailyReadingWitness(root, at, values) {
     directSeavt(entity, "daily-reading:transition-witness", niSurface("transition-witness", values.witness), at),
     directSeavt(entity, "daily-reading:disposition", `daily-reading.disposition.${values.disposition}`, at),
   ];
-  return appendSeavtEntries({ root: root, feed: "divination.daily-reading", entries: rows, at: at });
+  for (const row of rows) append(root, "daily-reading", row);
+  return rows.length;
 }
