@@ -11,7 +11,7 @@ import {
   admitJsonSemanticContent,
   EMPTY_WITNESS_ROOT,
   identifyJsonSemanticContent,
-} from "@red-cup-engineering/computer-content-address-engineering-services-section/semantic-content-identity";
+} from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity";
 import {
   identifyNormalizedSemanticContent,
 } from "@red-cup-engineering/computer-code-engineering-services-section/semiotic-expression-notation/runtime";
