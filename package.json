@@ -12,6 +12,11 @@
     "test": "node --test test/contract-daily-reading.test.mjs services/divination-services-section/services/ephemeris-tracking-team/test/ephemeris-product.test.mjs services/divination-services-section/services/ephemeris-tracking-team/test/precision-moment.test.mjs services/divination-services-section/services/astrology-inference-team/test/astrology-reading.test.mjs"
   },
   "description": "Divination's sovereign deterministic RMN daily-reading settlement service.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/semiotic-computer-system-services-section.git",
+    "directory": "services/divination-computer-system-service"
+  },
   "files": [
     "src/contract-daily-reading.mjs",
     "src/daily-reading-witness.mjs",
