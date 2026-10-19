@@ -14,8 +14,7 @@
   "description": "Divination's sovereign deterministic RMN daily-reading settlement service.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/red-cup-engineering/semiotic-computer-system-services-section.git",
-    "directory": "services/divination-computer-system-service"
+    "url": "git+https://github.com/red-cup-engineering/divination-computer-system-service.git"
   },
   "files": [
     "src/contract-daily-reading.mjs",
