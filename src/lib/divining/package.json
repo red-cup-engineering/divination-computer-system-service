@@ -5,7 +5,7 @@
   "description": "Sign-reading practice producers -- astrology, tarot, numerology, the computus, the lectionary, geomancy, the I Ching, Ifa, runes, the Numogram, and Lakota star knowledge -- with a clean shared FOUR Reading settlement, live and source-available at Divination. It intentionally does not reproduce the legacy panelConsensus, sigma-dual prediction, or D4 gauge-orbit APIs; see content/text/documents/sign-reading-as-settling.md.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/red-cup-engineering/semiotic-computer-system-services-section.git",
+    "url": "git+https://github.com/red-cup-engineering/semiotic-computer-system-engineering-services-section.git",
     "directory": "services/divination-computer-system-service/src/lib/divining"
   },
   "scripts": {
