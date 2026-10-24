@@ -1,8 +1,8 @@
 [submodule "tarot-services-section"]
 	path = services/tarot-services-section
-	url = https://github.com/red-cup-engineering/tarot-services-section.git
+	url = https://github.com/red-cup-engineering/tarot-engineering-services-section.git
 	branch = main
 [submodule "scrying-services-section"]
 	path = services/scrying-services-section
-	url = https://github.com/red-cup-engineering/scrying-services-section.git
+	url = https://github.com/red-cup-engineering/scrying-engineering-services-section.git
 	branch = main
