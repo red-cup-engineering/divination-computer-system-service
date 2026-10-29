@@ -1,0 +1,4 @@
+minimumReleaseAgeExclude:
+  - '@lenticule-science/astronomy-services-section@0.4.2'
+  - '@lenticule-science/articulating@0.4.1'
+  - '@red-cup-engineering/computer-data-type-engine@0.1.0'

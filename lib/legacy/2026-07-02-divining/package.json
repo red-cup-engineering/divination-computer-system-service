@@ -1,0 +1,90 @@
+{
+  "name": "@emsenn/divining",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Divining — sign-reading as settling, over relating · communicating · knowing · socializing · playing. A divinatory question is admitted through @emsenn/communicating; a panel of sign-witnesses is adjudicated as a @emsenn/socializing Social Field (the knowledge-join consensus and its opposition-H¹); and the settled bilattice charge is read as a Reading — the σ-dual pair diagnosis (≤_k, the held present, cognized via @emsenn/knowing) and prediction (≤_t, the reach toward the not-yet, cut via @emsenn/playing's ludics interaction), carrying the D₄ gauge orbit over @emsenn/relating's FOUR. Astrology, cartomancy, numerology, calendar/computus, and liturgy are sign-panel producers read through the one core, not primitive ontology.",
+  "scripts": {
+    "clean": "rm -rf dist .tmp/test-dist",
+    "check": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/scripts/chart.mjs dist/scripts/events.mjs dist/scripts/aspects.mjs dist/scripts/draw.mjs dist/scripts/reduce.mjs",
+    "prepack": "pnpm run rebuild",
+    "rebuild": "pnpm run clean && pnpm run build"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "bin": {
+    "divination-chart": "./dist/scripts/chart.mjs",
+    "divination-events": "./dist/scripts/events.mjs",
+    "divination-aspects": "./dist/scripts/aspects.mjs",
+    "divination-draw": "./dist/scripts/draw.mjs",
+    "divination-reduce": "./dist/scripts/reduce.mjs"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./articulating": {
+      "types": "./dist/articulating/index.d.mts",
+      "import": "./dist/articulating/index.mjs"
+    },
+    "./articulating/predicating": {
+      "types": "./dist/articulating/predicating/index.d.mts",
+      "import": "./dist/articulating/predicating/index.mjs"
+    },
+    "./articulating/predicating/positing": {
+      "types": "./dist/articulating/predicating/positing/index.d.mts",
+      "import": "./dist/articulating/predicating/positing/index.mjs"
+    },
+    "./articulating/predicating/positing/settling": {
+      "types": "./dist/articulating/predicating/positing/settling/index.d.mts",
+      "import": "./dist/articulating/predicating/positing/settling/index.mjs"
+    },
+    "./topology": {
+      "types": "./dist/topology/index.d.mts",
+      "import": "./dist/topology/index.mjs"
+    },
+    "./astrology": {
+      "types": "./dist/astrology/index.d.mts",
+      "import": "./dist/astrology/index.mjs"
+    },
+    "./astrology/experimental": {
+      "types": "./dist/astrology/experimental/index.d.mts",
+      "import": "./dist/astrology/experimental/index.mjs"
+    },
+    "./divination": {
+      "types": "./dist/divination/index.d.mts",
+      "import": "./dist/divination/index.mjs"
+    },
+    "./divination/codecs": {
+      "types": "./dist/divination/codecs/index.d.mts",
+      "import": "./dist/divination/codecs/index.mjs"
+    },
+    "./calendar": {
+      "types": "./dist/calendar/index.d.mts",
+      "import": "./dist/calendar/index.mjs"
+    },
+    "./liturgy": {
+      "types": "./dist/liturgy/index.d.mts",
+      "import": "./dist/liturgy/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@emsenn/communicating": "0.0.0",
+    "@emsenn/knowing": "0.0.0",
+    "@emsenn/playing": "0.0.0",
+    "@emsenn/relating": "0.0.0",
+    "@emsenn/socializing": "0.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  },
+  "sideEffects": false
+}
